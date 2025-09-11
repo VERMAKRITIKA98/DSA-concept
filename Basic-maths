@@ -1,0 +1,14 @@
+1. Find divisor of any number? Ex. 36 = 1, 2, 3, 4, 6, 9, 12, 18, 36
+There are 2 solutions of it: 
+  1. you can find all the iterator using for loop and the time complexity for that will be O(n).
+  2. find the sqareroot of n and put the loop till square root.
+      Ex. 36 = 6*6, 4*9, 3*12, 2*18, 1*36
+      for(let i=0; i*i<n; i++){
+        if(n%i===0){
+          print(i)
+      }if(n/i!=1){
+          print(n/i);
+      }
+      }
+      ten sort it. //If ask for sorted array
+------------------------------------------------------------
