@@ -3,7 +3,7 @@ There are 2 solutions of it:
   1. you can find all the iterator using for loop and the time complexity for that will be O(n).
   2. find the sqareroot of n and put the loop till square root.
       Ex. 36 = 6*6, 4*9, 3*12, 2*18, 1*36
-      for(let i=0; i*i<n; i++){
+      for(let i=1; i*i<n; i++){
         if(n%i===0){
           print(i)
       }if(n/i!=1){
@@ -11,4 +11,26 @@ There are 2 solutions of it:
       }
       }
       ten sort it. //If ask for sorted array
-------------------------------------------------------------
+----------------------------------------------------------------------
+Prime No. check - exactly 2 factors (1 and number itself); 
+sol. similar to above question we will check divisor and if the count is greater than 2 then number is not a prime
+  for(let i=1; i*i<n; i++){
+        if(n%i===0){
+          count++;
+      }if(n/i!=1){
+          count++;
+      }
+      }
+----------------------------------------------------------------------
+GCD & HCF: for GCD : let n1 and n2 two numbers:
+1.  let gcd = 0;
+  for (let i=0; i<min(n1, n2); i++){
+    if(n1%i===0 && n2%i === 0 ) gcd = i;
+  }
+2. for(i=min(n1, n2); i>0; i--){          //for worst case TC: min(n1, n2)
+      if(n1%i===0 && n2%i === 0 ) 
+      print(i)
+      break;
+    }
+3. Euclidean Algorithm:
+
