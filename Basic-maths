@@ -10,10 +10,10 @@ There are 2 solutions of it:
           print(n/i);
       }
       }
-      ten sort it. //If ask for sorted array
+      then sort it. //If ask for sorted array
 ----------------------------------------------------------------------
 Prime No. check - exactly 2 factors (1 and number itself); 
-sol. similar to above question we will check divisor and if the count is greater than 2 then number is not a prime
+sol. Similar to above question we will check divisor and if the count is greater than 2 then number is not a prime
   for(let i=1; i*i<n; i++){
         if(n%i===0){
           count++;
@@ -32,5 +32,7 @@ GCD & HCF: for GCD : let n1 and n2 two numbers:
       print(i)
       break;
     }
-3. Euclidean Algorithm:
+3. Euclidean Algorithm: (a>b)
+  gcd(a,b) = gcd(a-b, b) // it iteratively checks whether till one of the numbers becomes 0 and the other number is the result.
+  gcd(a,b) = gcd(a%b, b) // rather than iterating again and again. TC: log(min(a,b));
 
